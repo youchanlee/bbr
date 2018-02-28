@@ -14,25 +14,25 @@ sudo ./bbr.sh
 
 如果内核在4.09之上即代表成功。内核安装成功后，使用下面的命令安装BBR，红色的为命令，黑色的为返回值。
 
-sysctl net.ipv4.tcp_available_congestion_control
+    sysctl net.ipv4.tcp_available_congestion_control
 
 返回值一般为：
 
 net.ipv4.tcp_available_congestion_control = bbr cubic reno
 
-sysctl net.ipv4.tcp_congestion_control
+    sysctl net.ipv4.tcp_congestion_control
 
 返回值一般为：
 
 net.ipv4.tcp_congestion_control = bbr
 
-sysctl net.core.default_qdisc
+    sysctl net.core.default_qdisc
 
 返回值一般为：
 
 net.core.default_qdisc = fq
 
-lsmod | grep bbr
+    lsmod | grep bbr
 
 返回值有 tcp_bbr 模块即说明 bbr 已启动。
 
