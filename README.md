@@ -14,6 +14,7 @@ sudo ./bbr.sh
 
 如果内核在4.09之上即代表成功。内核安装成功后，使用下面的命令安装BBR。
 
+
     sysctl net.ipv4.tcp_available_congestion_control
 
 返回值一般为：
