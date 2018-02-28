@@ -13,8 +13,8 @@ sudo ./bbr.sh
 安装完成后系统需要重启，重启后使用命令uname -r来查询系统内核是多少。
 
 如果内核在4.09之上即代表成功。内核安装成功后，使用下面的命令安装BBR，红色的为命令，黑色的为返回值。
-
-    sysctl net.ipv4.tcp_available_congestion_control
+命令:
+    sysctl net.ipv4.tcp_available_congestion_control
 
 返回值一般为：
 
