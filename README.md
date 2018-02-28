@@ -32,7 +32,7 @@ net.ipv4.tcp_congestion_control = bbr
 返回值一般为：
 
 net.core.default_qdisc = fq
-命令:
+
 
     lsmod | grep bbr
 
